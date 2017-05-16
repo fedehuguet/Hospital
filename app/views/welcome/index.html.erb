@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Doctorpatient</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Doctor for each patient</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Visit Date</th>
+        <th>Dr. Firstname</th>
+        <th>Dr. Lastname</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @response.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+        <td><%= x[4] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

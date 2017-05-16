@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Abnormal</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Abnormal results for all patients</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Date</th>
+        <th>Indicator</th>
+        <th>Min</th>
+        <th>Max</th>
+        <th>Result</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @response.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+        <td><%= x[4] %></td>
+        <td><%= x[5] %></td>
+        <td><%= x[6] %></td>
+        <td><%= x[7] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

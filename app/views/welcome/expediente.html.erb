@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Abnormal</title>
+</head>
+<body>
+
+  
+<div class="container">
+  <h2>Expedient of a patient</h2>
+  <h4>Personal information</h4>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Bloodtype</th>
+        <th>Birthdate</th>
+        <th>Sex</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @response1.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+        <td><%= x[4] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+    <table class="table table-striped">
+    <h4>Operations</h4>
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>SurgeryType</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @response2.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+      <table class="table table-striped">
+    <h4>Allergies</h4>
+    <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @response3.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Lab Test Name</th>
+        <th>Dr. Firstname</th>
+        <th>Dr. Lastname</th>
+        <th>Lab Test date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @resb.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+      <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Indicator</th>
+        <th>Result</th>
+        <th>Comments</th>
+        <th>Minimum</th>
+        <th>Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @responselt1.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+        <td><%= x[4] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+      <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Lab Test Name</th>
+        <th>Dr. Firstname</th>
+        <th>Dr. Lastname</th>
+        <th>Lab Test date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @resp.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+        <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Indicator</th>
+        <th>Result</th>
+        <th>Comments</th>
+        <th>Minimum</th>
+        <th>Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @responselt2.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+        <td><%= x[4] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+          <table class="table table-striped">
+    <h4>Prescriptions</h4>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Instructions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @response4.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+        <td><%= x[4] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

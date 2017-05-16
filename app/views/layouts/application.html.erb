@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medico</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <a class="navbar-brand" href="http://localhost:3000/#"><b>Home</b></a>
+
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">Acerca de nosostros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="lblFecha">12/12/12</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  -->
+
+    <ul class="nav nav-tabs">
+  <li role="presentation"><a href="http://localhost:3000/#">Doctors</a></li>
+  <li role="presentation"><a href="http://localhost:3000/expediente">Patient</a></li>
+  <li role="presentation"><a href="http://localhost:3000/prescriptions">Prescription</a></li>
+  <li role="presentation"><a href="http://localhost:3000/labtest">Lab Test</a></li>
+  <li role="presentation"><a href="http://localhost:3000/abnormal">Abnormal</a></li>
+	</ul>
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lab Tests</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Labtest of a patient</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Dr. Firstname</th>
+        <th>Dr. Lastname</th>
+        <th>LabTest Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @response1.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+        <td><%= x[4] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+    <table class="table table-striped">
+    <h4>Results</h4>
+    <thead>
+      <tr>
+        <th>Indicator</th>
+        <th>Minimum</th>
+        <th>Maximum</th>
+        <th>Result</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @response2.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+        <td><%= x[4] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <!--
+    <h2>Labtest #2 for Patient #2</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Dr. Firstname</th>
+        <th>Dr. Lastname</th>
+        <th>LabTest Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @response3.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+        <td><%= x[4] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+      <table class="table table-striped">
+    <h4>Results</h4>
+    <thead>
+      <tr>
+        <th>Indicator</th>
+        <th>Minimum</th>
+        <th>Maximum</th>
+        <th>Result</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @response4.each do|x| %>
+      <tr>
+        <td><%= x[0] %></td>
+        <td><%= x[1] %></td>
+        <td><%= x[2] %></td>
+        <td><%= x[3] %></td>
+        <td><%= x[4] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+-->
+
+</body>
+</html>
